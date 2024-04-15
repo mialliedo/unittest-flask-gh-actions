@@ -26,12 +26,12 @@ jobs:
       - name: Set up Python all python version
         uses: actions/setup-python@v5
         with:
-          python-version: ${{ matrix.python-version }}
+          python-version: 3.10
           #architecture: x64
        
       # Install all the app dependencies
       - name: Install dependencies
-        run: pip install -r requirements.txt --use-feature=2020-resolver
+        run: pip install -r requirements.txt #--use-feature=2020-resolver
         
       # Build the app and run tests
       - name: Run Test
