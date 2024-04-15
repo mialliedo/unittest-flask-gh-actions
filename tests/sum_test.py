@@ -2,6 +2,7 @@ import unittest
 
 from app.routes import sum
 
+
 class TestSum(unittest.TestCase):
     def test_list_int(self):
         data = [1, 2, 3, 4, 5]
@@ -18,11 +19,10 @@ class TestSum(unittest.TestCase):
         result = sum(data)
         self.assertEqual(result, 5) 
 
-    def test_with_tupple(self):
+    def test_with_tuple(self):
         data = (1, 2, 3, 4, 5)
         result = sum(data)
         self.assertEqual(result, 15)
-
 
     def test_fail_with_string(self):
         data = [1, 2, '3', '4', '5']
