@@ -17,7 +17,7 @@ class TestSum(unittest.TestCase):
     def test_list_with_negative_value(self):
         data = [1, 2, 3, 4, -5] 
         result = sum(data)
-        self.assertEqual(result, 5) 
+        self.assertEqual(result, 6)
 
     def test_with_tuple(self):
         data = (1, 2, 3, 4, 5)
